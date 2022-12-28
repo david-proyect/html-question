@@ -1,0 +1,236 @@
+@charset "UTF-8";
+/* CSS Document */
+
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700');
+
+/*reset*/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after, q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*clearfix*/
+
+.group:before, .group:after {
+	content: "";
+	display: table;
+}
+.group:after {
+	clear: both;
+}
+.group {
+	zoom: 1;
+}
+
+.list-enum{
+	padding-left:15px;
+}
+
+.list-enum li{
+	list-style: decimal;
+}
+
+
+/*:::::::::::::::::::::::::::::: GENERAL ::::::::::::::::::::::::::::::*/
+
+body {
+	font-family: 'Roboto', sans-serif;
+	color: #002d6a;
+	font-size: 16px;
+	font-weight: 100;
+	background:#e2e2e2;
+}
+p, li{
+	font-weight: 100;
+	font-family: 'Roboto', sans-serif;
+	color: #002d6a;
+	font-size: 16px;
+	line-height: 21px;
+	margin-bottom: 15px;
+}
+
+strong{
+	font-weight: 500;
+}
+*{
+	transition-duration: 0.5s;
+}
+
+.conteGeneral{
+	background: #fff;
+	padding: 5%;
+}
+h1{
+	font-family: 'Montserrat', sans-serif;
+}
+
+a:focus, a:hover{
+	text-decoration: none;
+}
+
+
+/*:::::::::::::::::::::::::::::: TAB ::::::::::::::::::::::::::::::*/
+
+.panel-default>.panel-heading{
+	background: #c1d72f;
+	color: #fff;
+	padding: 0;
+}
+.panel-title {
+    line-height: 21px;
+}
+.btnTab{
+	display: block;
+	padding: 10px 54px 10px 10px;
+	position: relative;
+}
+.collapsed{
+	background: #261f4c;
+}
+
+	.panel-heading img{
+		width: 3%;
+		margin: 0 2px 0 0;
+	}
+.panel-group .panel, .panel-heading{
+	    border-radius: 0;
+}
+.panel-default{
+	border:none;
+}
+	.ArrowTab{
+		background: #9ab53b;
+	    position: absolute;
+	    display: inline-flex;
+	    padding: 14px;
+	    right: 0;
+	    top: 0;
+	    height: 100%;
+	    justify-content: center;
+	    align-items: center;
+	}
+		.panel-default>.panel-heading .ArrowTab img{
+			width: 80%;
+		}
+
+		.collapsed .ArrowTab{
+			background: none;
+		}
+				.collapsed .ArrowTab .imgArrow2{
+					display: none;
+			}
+				.collapsed .ArrowTab .imgArrow1{
+					display: block;
+			}
+			.ArrowTab .imgArrow1{
+				display: none;
+			}
+.panel-body {
+    padding: 15px 0;
+}
+.carousel-inner p{
+	margin:20px;
+}
+.item img{
+	width: 100%;
+}
+.carousel-indicators .active,
+.carousel-indicators li {
+    width: 20px;
+    height:20px;
+}
+.carousel-indicators .active{
+	background-color: #aeaeac;
+}
+.carousel-indicators li {
+    border: 1px solid #aeaeac;
+    margin-top: 30px;
+}
+.carousel-indicators{
+	bottom: -16px;
+}
+
+.conteTerminos p{
+	margin-bottom: 20px;
+}
+
+.conteTerminos li{
+	font-weight: 300;
+	list-style: disc;
+	margin-left: 20px;
+}
+.conteTerminos h1{
+	font-weight: 500;
+	font-family: 'Roboto', sans-serif;
+	color: #002d6a;
+	font-size: 23px;
+	margin-bottom: 20px;
+}
+
+.pCarousel{
+	text-align: center;
+	margin-top: 30px;
+}
+
+h2{
+	color: #261f4c;
+	font-size: 24px;
+	font-weight: 500;
+	font-family: 'Roboto', sans-serif;
+
+}
+/*:::::::::::::::::::::::::::::: MEDIA QUERY ::::::::::::::::::::::::::::::*/
+
+/* Small devices (tablets, 768px and up) */
+/*-------md------*/
+@media (max-width: 1199px){}
+@media (max-width: 1080px){}
+/*-------sm------*/
+@media (max-width: 992px){
+	.panel-heading img{
+		width: 4%;
+	}
+}
+@media (max-width: 830px){}
+@media (max-width: 745px){}
+@media (max-width: 650px){
+		.panel-heading img{
+		width: 5%;
+	}
+}
+@media (max-width: 448px){}
+@media (max-width: 400px){
+		.panel-heading img{
+		width: 9%;
+	}
+}
+@media (max-width: 320px){
+		.panel-heading img{
+		width: 10%;
+	}
+}
